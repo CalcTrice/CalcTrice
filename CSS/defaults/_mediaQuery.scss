@@ -1,0 +1,12 @@
+$break-point: (
+	small: 400px,
+	medium: 768px,
+	large: 992px,
+);
+
+@mixin mq($key) {
+	$size: map-get($break-point, $key);
+	@media screen and(max-width: $size) {
+		@content;
+	}
+}

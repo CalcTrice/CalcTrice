@@ -1,0 +1,21 @@
+$colors: (
+	neutral-black: (
+		100: rgba(0, 0, 0, 0.15),
+		200: rgba(0, 0, 0, 0.3),
+		300: rgba(0, 0, 0, 0.7),
+		400: rgba(0, 0, 0, 1),
+	),
+	neutral-white: (
+		100: rgba(255, 255, 255, 0.7),
+		200: rgba(255, 255, 255, 1),
+		000: rgba(255, 255, 255, 0),
+	),
+	primary-yellow: (
+		100: rgba(255, 176, 0, 0.5),
+		200: rgba(255, 176, 0, 1),
+	),
+	secondary: (
+		warning: rgba(179, 58, 58, 1),
+		success: rgba(42, 169, 101, 1),
+	),
+);

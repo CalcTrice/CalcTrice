@@ -1,0 +1,118 @@
+@import "defaults/defaults";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+	box-sizing: border-box;
+	//font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	position: relative;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+}
+::selection {
+	background-color: var(--clr-primary-yellow-100);
+}
+
+:root {
+	@each $color, $shades in $colors {
+		@each $shade, $value in $shades {
+			--clr-#{$color}-#{$shade}: #{$value};
+		}
+	}
+
+	@each $screen-size, $font-size in $type-scale {
+		@if $screen-size == large {
+			@each $size, $value in $font-size {
+				--fs-#{$size}: #{$value};
+			}
+		} @else if $screen-size == medium {
+			@include mq(medium) {
+				@each $size, $value in $font-size {
+					--fs-#{$size}: #{$value};
+				}
+			}
+		} @else {
+			@include mq(small) {
+				@each $size, $value in $font-size {
+					--fs-#{$size}: #{$value};
+				}
+			}
+		}
+	}
+
+	@each $weight, $value in $weights {
+		--wgt-#{$weight}: #{$value};
+	}
+}
+
+@import "layouts/layouts";
+@import "components/components";
+
+////// Component Style Settings - Yash Sonalia - 20 Mar 2021 //////
+
+// Cursor Styling
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-359deg);
+	}
+}
+#cursor-svg {
+	overflow: hidden;
+	width: 100px;
+	height: auto;
+	font-size: 64px;
+	font-family: "Poppins";
+	font-weight: var(--wgt-700);
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	animation: rotation 3.5s infinite linear;
+	pointer-events: none;
+	transition: top 0.5s, left 0.5s;
+	transition-timing-function: ease-out;
+}
+//Document Styling
+
+a {
+	text-decoration: none !important;
+}
+h1 {
+	text-align: center;
+	color: var(--clr-neutral-black-400) !important;
+	font-size: var(--fs-800) !important;
+	font-weight: var(--wgt-700) !important;
+	text-transform: uppercase;
+	user-select: none;
+	line-height: 200px;
+}
+
+h4,
+h4 a {
+	font-size: var(--fs-200) !important;
+	font-weight: var(--wgt-500) !important;
+	color: var(--clr-neutral-black-400) !important;
+}
+
+.section {
+	height: 100vh;
+}

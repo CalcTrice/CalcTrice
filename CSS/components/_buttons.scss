@@ -1,0 +1,140 @@
+// @mixin action-button-black($width, $height, $bg, $clr, $ff, $fs, $wgt) {
+// 	width: $width;
+// 	height: $height;
+// 	border: 2px solid $clr;
+// 	border-radius: 0px;
+// 	background-color: $bg;
+
+// 	color: $clr;
+// 	font-family: $ff;
+// 	font-size: $fs;
+// 	font-weight: $wgt;
+
+// 	transition: all 150ms ease-in-out;
+// 	cursor: pointer;
+
+// 	outline: none;
+
+// 	&:hover {
+// 		letter-spacing: 2px;
+// 		border: 2px solid $clr;
+// 		background-color: $clr;
+// 		color: $bg;
+// 	}
+// }
+
+// @mixin micro-action-button($fs, $fw, $clr, $bg) {
+// 	border: none;
+// 	font-size: $fs;
+// 	background: transparent;
+// 	position: relative;
+// 	padding: 0;
+// 	cursor: pointer;
+// 	&::after {
+// 		position: absolute;
+// 		bottom: 0px;
+// 		left: 0px;
+// 		content: "";
+// 		width: 4ch;
+// 		height: 2px;
+// 		background: $bg;
+// 		transition: all 150ms ease-in-out;
+// 	}
+// 	&:hover {
+// 		&::after {
+// 			content: "";
+// 			width: 100%;
+
+// 			background-color: $bg;
+// 		}
+// 	}
+// }
+
+//////////////////////////////////////
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	// padding: 1rem 2rem;
+	width: 180px;
+	height: 50px;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	position: relative;
+	display: inline-block;
+}
+button + svg:hover {
+	opacity: 0;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.button--major-action-btn {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	border: 2px solid var(--clr-neutral-black-400);
+}
+
+.button--major-action-btn > span {
+	display: inline-block;
+}
+
+.button--major-action-btn:hover > span {
+	opacity: 0;
+}
+
+.marquee {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.marquee__inner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	--offset: 1rem;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 1.5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+}
+
+.button--major-action-btn:hover .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+	color: var(--clr-neutral-black-400);
+	background-color: var(--clr-white-black-200);
+	// color: var(--clr-neutral-white-200);
+	// background-color: var(--clr-neutral-black-400);
+}
+
+.marquee span {
+	text-align: center;
+	white-space: nowrap;
+	padding: 0.79rem 0.5rem;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
