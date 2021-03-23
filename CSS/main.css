@@ -150,11 +150,14 @@ nav.navbar .navbar-toggler {
 
 .heroSection {
   width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .heroSection .heroHeadline {
   position: relative;
   z-index: 2;
+  margin-left: 5vw;
 }
 
 .heroSection .heroHeadline span {
@@ -191,26 +194,9 @@ nav.navbar .navbar-toggler {
   width: 100%;
 }
 
-@-webkit-keyframes cssmarquee {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-}
-
-@keyframes cssmarquee {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
+.whatWeDoSection .whatWeDoHeader hr {
+  margin: 10px auto;
+  width: 90%;
 }
 
 /*
@@ -257,6 +243,7 @@ button + svg:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   border: 2px solid var(--clr-neutral-black-400);
+  border-radius: 0px;
 }
 
 .button--major-action-btn > span {
@@ -353,10 +340,10 @@ button + svg:hover {
   top: 0;
   left: 0;
   z-index: 0;
+  mix-blend-mode: screen;
 }
 
 .section {
-  height: calc(100%);
   width: 100vw;
 }
 

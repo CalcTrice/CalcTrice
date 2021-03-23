@@ -11,9 +11,28 @@ const scroll = new LocomotiveScroll({
 window.onload = function () {
     Particles.init({
         selector: '.background',
-        maxParticles: 200,
+        maxParticles: 100,
         color: "#ffb000",
-        connectParticles: true
+        connectParticles: true,
+        sizeVariations: 7,
+        speed: .6,
+        responsive: [
+            {
+                breakpoint: 768,
+                options: {
+                    maxParticles: 40,
+                    color: '#ffb000'
+                }
+            },
+            {
+                breakpoint: 400,
+                options: {
+                    maxParticles: 40,
+                    color: '#ffb000'
+                }
+            },
+
+        ]
 
     });
 };

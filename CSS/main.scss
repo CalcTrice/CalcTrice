@@ -77,32 +77,6 @@ body {
 		}
 	}
 }
-// Cursor Styling
-
-// @keyframes rotation {
-// 	from {
-// 		transform: rotate(0deg);
-// 	}
-// 	to {
-// 		transform: rotate(-359deg);
-// 	}
-// }
-// #cursor-svg {
-// 	overflow: hidden;
-// 	width: 100px;
-// 	height: auto;
-// 	font-size: 64px;
-// 	font-family: "Poppins";
-// 	font-weight: var(--wgt-700);
-// 	position: absolute;
-// 	z-index: 999;
-// 	top: 50%;
-// 	left: 50%;
-// 	animation: rotation 3s infinite linear;
-// 	pointer-events: none;
-// 	transition: top 0.2s, left 0.2s;
-// 	transition-timing-function: ease-out;
-// }
 
 .background {
 	position: absolute;
@@ -110,11 +84,11 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 0;
+	mix-blend-mode: screen;
 }
 //Document Styling
 
 .section {
-	height: calc(100%);
 	width: 100vw;
 }
 
