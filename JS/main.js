@@ -1,13 +1,13 @@
 'use strict';
 
-const testimonialsCarouselSlider = () => {
+const testimonialsCarouselSlider = function () {
     const slider = document.querySelector('.slider');
     const carousel = document.querySelector('.testimonials-carousel');
     const prev = document.querySelector('.arrow-prev');
     const next = document.querySelector('.arrow-next');
     let direction = -1;
 
-    prev.addEventListener('click', () => {
+    prev.addEventListener('click', function () {
         if (direction === -1) {
             direction = 1;
             slider.appendChild(slider.firstElementChild);
@@ -18,7 +18,7 @@ const testimonialsCarouselSlider = () => {
 
     });
 
-    next.addEventListener('click', () => {
+    next.addEventListener('click', function () {
 
         if (direction === 1) {
             direction = -1;
@@ -29,7 +29,7 @@ const testimonialsCarouselSlider = () => {
         slider.style.transform = 'translate(-20%)';
 
     });
-    slider.addEventListener('transitionend', () => {
+    slider.addEventListener('transitionend', function () {
         if (direction === -1)
             slider.appendChild(slider.firstElementChild);
         else if (direction === 1)
@@ -38,13 +38,13 @@ const testimonialsCarouselSlider = () => {
         slider.style.transition = 'none';
         slider.style.transform = 'translate(0%)';
 
-        setTimeout(() => {
+        setTimeout(function () {
 
             slider.style.transition = 'all 0.3s ease-in-out';
         });
     })
 }
-const testimonialSlideContentCreator = () => {
+const testimonialSlideContentCreator = function () {
 
     let counter = 1;
     const content = [
@@ -95,14 +95,14 @@ const testimonialSlideContentCreator = () => {
     });
 }
 
-const navIntersectionObserver = () => {
+const navIntersectionObserver = function () {
 
     const navbar = document.getElementById('navbar');
     const endSection = document.querySelector('.endSection');
 
 
-    const obsCallback = (entries) => {
-        entries.forEach(entry => {
+    const obsCallback = function (entries) {
+        entries.forEach(function (entry) {
 
             if (entry.isIntersecting)
                 navbar.classList.add('darkNav');
@@ -122,7 +122,7 @@ const navIntersectionObserver = () => {
     observer.observe(endSection);
 }
 
-const init = () => {
+const init = function () {
     testimonialsCarouselSlider();
     testimonialSlideContentCreator();
     navIntersectionObserver();
