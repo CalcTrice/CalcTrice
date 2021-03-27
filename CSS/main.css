@@ -248,6 +248,10 @@ nav.navbar .navbar-nav .nav-link::after {
   transition: all 0.2s ease-in-out;
 }
 
+nav.navbar .navbar-nav .nav-link:hover {
+  color: var(--clr-neutral-black-400);
+}
+
 nav.navbar .navbar-nav .nav-link:hover::after {
   bottom: 0;
   opacity: 1;
@@ -266,6 +270,10 @@ nav.darkNav .navbar-brand {
 }
 
 nav.darkNav .navbar-nav .nav-link {
+  color: var(--clr-neutral-white-200);
+}
+
+nav.darkNav .navbar-nav .nav-link:hover {
   color: var(--clr-neutral-white-200);
 }
 
@@ -843,10 +851,15 @@ section {
     top: 110%;
   }
   .arrow-prev {
-    left: 15%;
+    left: 10%;
   }
   .arrow-next {
-    right: 15%;
+    right: 10%;
+  }
+  .scroll-opacity-class {
+    opacity: 1;
+    -webkit-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
   }
 }
 

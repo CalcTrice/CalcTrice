@@ -43,6 +43,7 @@ nav.navbar {
 			}
 
 			&:hover {
+				color: var(--clr-neutral-black-400);
 				&::after {
 					bottom: 0;
 					opacity: 1;
@@ -67,6 +68,10 @@ nav.darkNav {
 	.navbar-nav {
 		.nav-link {
 			color: var(--clr-neutral-white-200);
+
+			&:hover {
+				color: var(--clr-neutral-white-200);
+			}
 		}
 	}
 }
