@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="CSS/main.css" />
         <link rel="stylesheet" href="CSS/vendors/Bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSS/vendors/locomotive-scroll/base.css">
-        <script defer src="JS/main.js"></script>
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
         <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     </head>
@@ -39,7 +39,7 @@
                 </textPath>
             </text>
             </svg> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
             <div class="navbar-brand" href="#">CALCTRICE</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,8 +55,8 @@
             </div>
         </nav>
         <div data-scroll-container class="container-fluid landingPage">
-            <section data-scroll-section class="section row heroSection">
-                <canvas  data-scroll data-scroll-speed="1" class="background"></canvas>
+            <section  class=" row heroSection">
+                <canvas  class="background"></canvas>
                 <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
                     <h1 class="heroHeadline">
                         <span class="heading-span-regular">Making</span>
@@ -81,16 +81,16 @@
                         </div>
                     </button>
                     <button href="#" class="button button--minor-action-button">
-                    Read Our Articles
+                    Read Our Articles 
                     </button>
                 </div>
             </section>
-            <section id="exploreNowScroll" data-scroll-section class="section whatWeDoSection">
+            <section id="exploreNowScroll" class="section whatWeDoSection">
                 <div class=" whatWeDoHeader">
-                    <h2 ><span >What We Do</span></h2>
+                    <h2>What We Do</h2>
                 </div>
                 <div class="services-what-we-do accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item  " id="service-1">
+                    <div data-scroll data-scroll-delay="0.01" data-scroll-class="scroll-opacity" class="accordion-item scroll-opacity-class" id="service-1">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <div class="accordian-number"><span class="number">01</span></div>
                             <div class="accordian-header">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="accordion-item  " id="service-2">
+                    <div data-scroll  data-scroll-class="scroll-opacity" data-scroll-delay="0.02"class="accordion-item scroll-opacity-class " id="service-2">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <div class="accordian-number"><span class="number">02</span></div>
                             <div class="accordian-header">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="accordion-item  " id="service-3">
+                    <div data-scroll data-scroll-delay="0.03" data-scroll-class="scroll-opacity" class="accordion-item scroll-opacity-class" id="service-3">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             <div class="accordian-number"><span class="number">03</span></div>
                             <div class="accordian-header">
@@ -174,75 +174,41 @@
                     <hr>
                 </div>
             </section>
-            <section class="testimonialsSection section" data-scroll-section>
-                <div class="testimonialsHeader">
-                    <h2>User Testimonials</h2>
+        
+            <section class="testimonialsSection ">
+                <div class="testimonials-header">
+                    <h2>Testimonials</h2>
+                    <h5>Let's see what our users say!</h5>
                 </div>
 
-                <div class="testimonials-container">
-                    <div class="arrow arrow-prev"><img src="assets/leftChevron.svg" alt=""></div>
+                <div class="testimonials-container ">
+                    <button data-scroll class="arrow arrow-prev"><img src="assets/leftChevron.svg" alt=""></button>
 
                     <div class="line-left"></div>
-                    <div class="carousel testimonials-carousel">
+                    <div data-scroll data-scroll-delay="0.01" data-scroll-class="scroll-opacity"  class="carousel testimonials-carousel scroll-opacity-class">
                         <div class="slider">
-                           <div class="slide-1">
-                               <div class="slide-content">
-                                   <div>
-                                    <q>Great collection of tools!</q>
-                                    <span class="username">Adam West</span>
-                                   </div>
-                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
-                               </div>
-                           </div>
-                           <div class="slide-2">
-                               <div class="slide-content">
-                                <div>
-                                    <q>Great collection of tools!</q>
-                                    <span class="username">Adam West</span>
-                                   </div>
-                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
-                               </div>
-                           </div>
-                           <div class="slide-3">
-                               <div class="slide-content">
-                                <div>
-                                    <q>Great collection of tools!</q>
-                                    <span class="username">Adam West</span>
-                                   </div>
-                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
-                               </div>
-                           </div>
-                           <div class="slide-4">
-                               <div class="slide-content">
-                                <div>
-                                    <q>Great collection of tools!</q>
-                                    <span class="username">Adam West</span>
-                                   </div>
-                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
-                               </div>
-                           </div>
-                           <div class="slide-5">
-                               <div class="slide-content">
-                                <div>
-                                    <q>Great collection of tools!</q>
-                                    <span class="username">Adam West</span>
-                                   </div>
-                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
-                               </div>
-                           </div>
                         </div>                       
                             
                        
                     </div>
                     <div class="line-right"></div>
-                    <div class="arrow arrow-next"><img src="assets/rightChevron.svg" alt=""></div>
+                    <button data-scroll class="arrow arrow-next"><img src="assets/rightChevron.svg" alt=""></button>
                 </div>
-            </section>
-            
-        </div>
+
+                <button href="#" class="button button--minor-action-button placeReview">
+                    Place your review
+                    </button>
+
+                </section>
+                <section class="endSection">
+                    <div class="contact"></div>
+                    <footer class="footer"></footer>
+                </section>
         <script src="CSS/vendors/Bootstrap/js/bootstrap.min.js"></script>
         <script defer src="JS/libraryVendors.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js
             "></script>
+
+        <script  src="JS/main.js"></script>
     </body>
 </html>

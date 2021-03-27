@@ -1,11 +1,11 @@
+'use strict';
+
 const testimonialsCarouselSlider = () => {
     const slider = document.querySelector('.slider');
     const carousel = document.querySelector('.testimonials-carousel');
     const prev = document.querySelector('.arrow-prev');
     const next = document.querySelector('.arrow-next');
     let direction = -1;
-
-    console.log(next, prev, slider, carousel);
 
     prev.addEventListener('click', () => {
         if (direction === -1) {
@@ -44,4 +44,87 @@ const testimonialsCarouselSlider = () => {
         });
     })
 }
-testimonialsCarouselSlider();
+const testimonialSlideContentCreator = () => {
+
+    let counter = 1;
+    const content = [
+        [
+            'Great collection of tools!',
+            'Adam West',
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo  A sunt deleniti exercitationem? At atque',
+        ],
+        [
+            'Great collection of tools!',
+            'John Jacobs',
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo A sunt deleniti exercitationem? At atque ducimus omnis cum qui voluptate vero corporis molestias nemo!',
+        ],
+        [
+            'Great collection of tools!',
+            'Martha Stewart',
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo A sunt deleniti exercitationem?',
+        ],
+        [
+            'Great collection of tools!',
+            'Max Robbie',
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo Nihil quam, harum accusantium dolorum facilis voluptatibus.',
+        ],
+        [
+            'Great collection of tools!',
+            'Jay Cart',
+            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo Nihil quam, harum accusantium dolorum facilis voluptatibus.',
+        ],
+    ];
+
+    const slider = document.querySelector('.slider');
+
+    content.forEach(function (person, id) {
+
+        slider.insertAdjacentHTML('beforeend',
+            `<div class="slide" id="slide-${counter + id}">
+                    <div class="slide-content">
+                        <div>
+                            <q>${person[0]}</q>
+                            
+                            <span class="username">${person[1]}</span>
+                        </div>
+                        <blockquote>"${person[2]}"</blockquote>
+                    </div>
+                </div>`
+        );
+
+    });
+}
+
+const navIntersectionObserver = () => {
+
+    const navbar = document.getElementById('navbar');
+    const endSection = document.querySelector('.endSection');
+
+
+    const obsCallback = (entries) => {
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting)
+                navbar.classList.add('darkNav');
+            else
+                navbar.classList.remove('darkNav');
+
+
+        });
+    }
+
+    const obsOptions = {
+        root: null,
+        threshold: 0.7
+    }
+
+    const observer = new IntersectionObserver(obsCallback, obsOptions);
+    observer.observe(endSection);
+}
+
+const init = () => {
+    testimonialsCarouselSlider();
+    testimonialSlideContentCreator();
+    navIntersectionObserver();
+}
+init();

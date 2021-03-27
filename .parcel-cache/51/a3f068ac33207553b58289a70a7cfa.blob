@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CalcTrice</title>
+        <link rel="stylesheet" href="1de3134312f0818b52733f400703b104">
+        <link rel="stylesheet" href="2029b0fa34d17f491381db412dd2d027">
+        <link rel="stylesheet" href="8e3396fd126662b49f9130fd238318cc">
+        <script defer="" src="85fb10c57ed59a95df00713ae845028f"></script>
+        <link rel="stylesheet" href="a591758652183a6e40b361c0da1f2909">
+        <script src="7990235146ac9b97c06f2e9d5b8a423e"></script>
+    </head>
+    <body>
+        <!-- <svg
+            id="cursor-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xml:lang="en"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 500 500"
+            >
+            <defs>
+                <path
+                    id="textcircle"
+                    d="M250,400
+                    a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                    transform="rotate(12,250,250)"
+                    />
+            </defs>
+            <rect width="100%" height="100%" fill="none" />
+            <text>
+                <textPath
+                    xlink:href="#textcircle"
+                    aria-label="CALCTRICE&#160"
+                    textLength="942"
+                    >
+                    CALC.TRICE.&#160;
+                </textPath>
+            </text>
+            </svg> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <div class="navbar-brand" href="#">CALCTRICE</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link " aria-current="page" href="#">About Us</a></li>
+                    <li><a class="nav-link" href="#">Services</a></li>
+                    <li><a class="nav-link" href="#">Contact Us</a></li>
+                    <li><a class="nav-link" href="#">Future Updates</a></li>
+                </ul>
+            </div>
+        </div></nav>
+        <div data-scroll-container="" class="container-fluid landingPage">
+            <section data-scroll-section="" class="section row heroSection">
+                <canvas data-scroll="" data-scroll-speed="1" class="background"></canvas>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+                    <h1 class="heroHeadline">
+                        <span class="heading-span-regular">Making</span>
+                        <span class="heading-span-regular">Complex</span>
+                        <span data-scroll="" data-scroll-speed="1" class="heading-span-outline">Calculations</span>
+                        <span class="heading-span-regular">Easy,</span>
+                        <span data-scroll="" data-scroll-speed="1" class="heading-span-outline">For You.</span>
+                    </h1>
+                </div>
+                <div data-scroll="" data-scroll-speed="2" class="col-xs-12 col-sm-12 col-md-12 col-lg-4 CTABtn">
+                    <button href="exploreNowScroll" class="button button--major-action-btn">
+                        <span>Explore Now</span>
+                        <div class="marquee" aria-hidden="true">
+                            <div class="marquee__inner">
+                                <span>Explore Now</span>
+                                <span>Explore Now</span>
+                                <span>Explore Now</span>
+                                <span>Explore Now</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button href="#" class="button button--minor-action-button">
+                    Read Our Articles
+                    </button>
+                </div>
+            </section>
+            <section id="exploreNowScroll" data-scroll-section="" class="section whatWeDoSection">
+                <div class=" whatWeDoHeader">
+                    <h2><span>What We Do</span></h2>
+                </div>
+                <div class="services-what-we-do accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item  " id="service-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div class="accordian-number"><span class="number">01</span></div>
+                            <div class="accordian-header">
+                                <h3>All-Purpose Calculation Tool</h3>
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            </div>
+                        </button>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="illustration">
+                                    <img src="9de882ed7f4cbc5ab5a1f5ff9eee96f9" alt="">
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio illo possimus mollitia. Nam dolorum, eius ab quibusdam incidunt numquam quod rem iusto magnam! Ad nostrum voluptate, accusamus adipisci aliquid culpa!
+                                        Reprehenderit necessitatibus atque dignissimos odio minus excepturi est cumque adipisci quasi eaque veniam reiciendis sit nemo recusandae voluptatum, hic vitae natus minima, possimus dolorum harum consequatur voluptatem repellat veritatis! Dolorem!
+                                        Doloremque reprehenderit dolorum enim cupiditate id iure voluptatibus. Dignissimos ipsum eligendi exercitationem at minima laborum. Quae iusto repudiandae labore in adipisci debitis maiores, necessitatibus cum? Quasi eius iste quas id!
+                                    </p>
+                                    <button class="button button--minor-action-button">
+                                        See All Tools!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-item  " id="service-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <div class="accordian-number"><span class="number">02</span></div>
+                            <div class="accordian-header">
+                                <h3>Financial Consultancy</h3>
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            </div>
+                        </button>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="illustration">
+                                    <img src="9de882ed7f4cbc5ab5a1f5ff9eee96f9" alt="">
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio illo possimus mollitia. Nam dolorum, eius ab quibusdam incidunt numquam quod rem iusto magnam! Ad nostrum voluptate, accusamus adipisci aliquid culpa!
+                                        Reprehenderit necessitatibus atque dignissimos odio minus excepturi est cumque adipisci quasi eaque veniam reiciendis sit nemo recusandae voluptatum, hic vitae natus minima, possimus dolorum harum consequatur voluptatem repellat veritatis! Dolorem!
+                                        Doloremque reprehenderit dolorum enim cupiditate id iure voluptatibus. Dignissimos ipsum eligendi exercitationem at minima laborum. Quae iusto repudiandae labore in adipisci debitis maiores, necessitatibus cum? Quasi eius iste quas id!
+                                    </p>
+
+                                    <button class="button button--minor-action-button">
+                                        Get Professional Consultancy!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="accordion-item  " id="service-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <div class="accordian-number"><span class="number">03</span></div>
+                            <div class="accordian-header">
+                                <h3>Weekly articles on finance</h3>
+                                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                            </div>
+                        </button>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="illustration">
+                                    <img src="9de882ed7f4cbc5ab5a1f5ff9eee96f9" alt="">
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio illo possimus mollitia. Nam dolorum, eius ab quibusdam incidunt numquam quod rem iusto magnam! Ad nostrum voluptate, accusamus adipisci aliquid culpa!
+                                        Reprehenderit necessitatibus atque dignissimos odio minus excepturi est cumque adipisci quasi eaque veniam reiciendis sit nemo recusandae voluptatum, hic vitae natus minima, possimus dolorum harum consequatur voluptatem repellat veritatis! Dolorem!
+                                        Doloremque reprehenderit dolorum enim cupiditate id iure voluptatibus. Dignissimos ipsum eligendi exercitationem at minima laborum. Quae iusto repudiandae labore in adipisci debitis maiores, necessitatibus cum? Quasi eius iste quas id!
+                                    </p>
+                                    <button class="button button--minor-action-button">
+                                    Read Articles Now!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </section>
+            <section class="testimonialsSection section" data-scroll-section="">
+                <div class="testimonialsHeader">
+                    <h2>User Testimonials</h2>
+                </div>
+
+                <div class="testimonials-container">
+                    <div class="arrow arrow-prev"><img src="7e4c16e1faaa56e94f63a984193d6e9e" alt=""></div>
+
+                    <div class="line-left"></div>
+                    <div class="carousel testimonials-carousel">
+                        <div class="slider">
+                           <div class="slide-1">
+                               <div class="slide-content">
+                                   <div>
+                                    <q>Great collection of tools!</q>
+                                    <span class="username">Adam West</span>
+                                   </div>
+                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
+                               </div>
+                           </div>
+                           <div class="slide-2">
+                               <div class="slide-content">
+                                <div>
+                                    <q>Great collection of tools!</q>
+                                    <span class="username">Adam West</span>
+                                   </div>
+                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
+                               </div>
+                           </div>
+                           <div class="slide-3">
+                               <div class="slide-content">
+                                <div>
+                                    <q>Great collection of tools!</q>
+                                    <span class="username">Adam West</span>
+                                   </div>
+                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
+                               </div>
+                           </div>
+                           <div class="slide-4">
+                               <div class="slide-content">
+                                <div>
+                                    <q>Great collection of tools!</q>
+                                    <span class="username">Adam West</span>
+                                   </div>
+                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
+                               </div>
+                           </div>
+                           <div class="slide-5">
+                               <div class="slide-content">
+                                <div>
+                                    <q>Great collection of tools!</q>
+                                    <span class="username">Adam West</span>
+                                   </div>
+                                   <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</blockquote>
+                               </div>
+                           </div>
+                        </div>                       
+                            
+                       
+                    </div>
+                    <div class="line-right"></div>
+                    <div class="arrow arrow-next"><img src="773701ddfa7b8ff6a942a344f50d9082" alt=""></div>
+                </div>
+            </section>
+            
+        </div>
+        <script src="08d560120b0d5cae1c0d9856007cd25a"></script>
+        <script defer="" src="7175a811d6bfb27bde4ae0a16149de90"></script>
+        <script src="c272e26751678299ac3df252f74060d6"></script>
+    </body>
+</html>

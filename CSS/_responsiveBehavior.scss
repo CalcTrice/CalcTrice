@@ -46,9 +46,8 @@
 		display: none;
 	}
 
-	.testimonialsHeader {
+	.testimonials-header {
 		padding: 0px 20px 20px;
-		transform: translateY(-50%);
 	}
 
 	.testimonials-container {
@@ -65,7 +64,7 @@
 		margin: auto;
 	}
 	.arrow {
-		top: 120%;
+		top: 110%;
 	}
 	.arrow-prev {
 		left: 15%;
@@ -102,6 +101,12 @@
 		}
 	}
 	.accordian-header {
+		h5 {
+			display: none;
+		}
+	}
+
+	.testimonials-header {
 		h5 {
 			display: none;
 		}

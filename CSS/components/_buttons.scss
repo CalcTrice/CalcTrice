@@ -69,7 +69,7 @@
 .marquee span {
 	text-align: center;
 	white-space: nowrap;
-	padding: 0.79rem 0.5rem;
+	padding: 0.83rem 0.5rem;
 }
 
 @keyframes marquee {
@@ -84,7 +84,8 @@
 
 ///////////////////////////////
 .button--minor-action-button {
-	font-weight: var(--wgt-500);
+	color: var(--clr-neutral-black-400) !important;
+	font-weight: var(--wgt-600);
 	border: none;
 	border-radius: 0px;
 	width: auto;
@@ -100,14 +101,14 @@
 		content: "";
 		width: 100%;
 		height: 2px;
-		background: var(--clr-neutral-black-400);
+		background: var(--clr-primary-yellow-200);
 		border-radius: 1px;
 		transition: all 0.2s ease-in-out;
 	}
 
 	&:hover {
 		&::after {
-			bottom: 10px;
+			bottom: 5px;
 			opacity: 1;
 		}
 	}
