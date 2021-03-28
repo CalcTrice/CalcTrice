@@ -33,7 +33,7 @@ nav.navbar {
 				content: "";
 				position: absolute;
 				opacity: 0;
-				bottom: -10px;
+				bottom: -15px;
 				left: 0;
 				content: "";
 				width: 100%;
@@ -46,7 +46,7 @@ nav.navbar {
 			&:hover {
 				color: var(--clr-neutral-black-400);
 				&::after {
-					bottom: 0;
+					bottom: -5px;
 					opacity: 1;
 				}
 			}

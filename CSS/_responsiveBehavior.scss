@@ -1,4 +1,8 @@
 @media screen and(max-width: 992px) {
+	.cursorFollower {
+		display: none;
+		z-index: -999;
+	}
 	nav.navbar {
 		padding: 0.4em;
 
@@ -51,7 +55,6 @@
 	}
 
 	.testimonials-container {
-		//background-color: black;
 		width: 90%;
 		margin: auto;
 

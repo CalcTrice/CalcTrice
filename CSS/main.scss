@@ -67,6 +67,17 @@ body {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
+
+.cursorFollower {
+	position: absolute;
+	z-index: 9999;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--clr-neutral-black-400);
+	background-color: var(--clr-primary-yellow-100);
+}
 ////// Component Style Settings - Yash Sonalia - 20 Mar 2021 //////
 
 // Scrollbar Styling{
@@ -170,6 +181,18 @@ blockquote {
 a {
 	text-decoration: none !important;
 }
+
+label {
+	font-size: 12px;
+	font-weight: var(--wgt-400);
+	color: var(--clr-neutral-white-100);
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(10px);
+}
+
 @import "layouts/layouts";
 @import "components/components";
 @import "responsiveBehavior";
