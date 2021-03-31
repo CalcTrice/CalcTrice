@@ -133,6 +133,5 @@ const initVendor = function () {
     loco();
     gsapInit();
 }
-window.onload = function () {
-    initVendor();
-}
+
+initVendor();
