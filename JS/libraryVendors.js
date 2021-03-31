@@ -1,34 +1,6 @@
 // Particle Effect
 const particles = function () {
-    Particles.init({
-        selector: '.background',
-        maxParticles: 100,
-        color: "#ffb000",
 
-        connectParticles: true,
-        sizeVariations: 7,
-        speed: .6,
-        responsive: [
-            {
-                breakpoint: 768,
-                options: {
-                    maxParticles: 40,
-                    color: '#ffb000',
-
-                }
-            },
-            {
-                breakpoint: 400,
-                options: {
-                    maxParticles: 40,
-                    color: '#ffb000',
-
-                }
-            },
-
-        ]
-
-    });
 
 };
 //Locomotive Scroll
@@ -130,7 +102,7 @@ const gsapInit = function () {
 }
 //INIT
 const initVendor = function () {
-    particles();
+    // particles();
     loco();
     gsapInit();
 }
