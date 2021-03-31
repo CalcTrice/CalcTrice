@@ -1,5 +1,5 @@
 // Particle Effect
-window.onload = function () {
+const particles = function () {
     Particles.init({
         selector: '.background',
         maxParticles: 100,
@@ -130,6 +130,7 @@ const gsapInit = function () {
 }
 //INIT
 const initVendor = function () {
+    particles();
     loco();
     gsapInit();
 }
